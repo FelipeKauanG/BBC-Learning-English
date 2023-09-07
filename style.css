@@ -7,7 +7,6 @@ body{
     src: url(images/FontsNinja-0.1.35.exe);
 }
 header{
-    background-image: url(images/BBC.png);
     display: flex;
     background-repeat: no-repeat;
     background-size: contain;
@@ -33,12 +32,72 @@ menu{
     height: 15vh;
     width: 100vw
 }
+menu{
+    color: #3A3A3A;
+}
 #title{
     font-family: "bbc";
     font-size: 2em;
 }
+#bbc{
+    height: 30px;
+}
 article{
     width: 100vw;
-    background-color: blue;
-    height: fit-content;
+    background-color: #00293D;
+    height: 200px;
+}
+#abasAcima{
+    text-align: center;
+    color: #001C2A;
+}
+#unit{
+    padding: 20px;
+    margin-top: -20px;
+    background-color: #001C2A;
+    width: 100vw;
+    text-align: center;
+}
+#abas{
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    height: 20px;
+    width: 100vw;
+    background-color: white;
+}
+#abas a{
+    text-decoration: none;
+    color: #00293D;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 5px;
+}
+#unit p{
+    color: white;
+}
+button{
+    width: 30px;
+    height: 10px;
+    background-color: rgb(201, 201, 201);
+    color: white;
+    border: none;
+    margin: -1px;
+    border-radius: 1px;
+}
+button:hover{
+    background-color: #FFFFFF;
+}
+button:active{
+    background-color: #62BBB9;
+}
+article{
+    padding: 20px;
+}
+article span{
+    color: white;
+    font-size: 1.5em;
+}
+article span span{
+    font-size: 2.5em;
 }
