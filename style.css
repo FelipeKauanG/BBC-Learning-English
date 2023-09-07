@@ -1,0 +1,44 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: 'bbc';
+    src: url(images/FontsNinja-0.1.35.exe);
+}
+header{
+    background-image: url(images/BBC.png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-color: transparent;
+    width: 100vw;
+    height: 40px;
+    margin: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+}
+menu{
+    margin: -5px;
+    background-image: url(images/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 100vw
+}
+#title{
+    font-family: "bbc";
+    font-size: 2em;
+}
+article{
+    width: 100vw;
+    background-color: blue;
+    height: fit-content;
+}
