@@ -15,8 +15,6 @@ body{
   'opsz' 24;
   
 }
-
-
 .material-symbols-outlined:hover{
     position: relative;
     cursor: pointer;
@@ -27,6 +25,11 @@ body{
     background-color: blue;
     height: 50px;
     width: 100vw;
+}
+header{
+    height: 20px;
+    width: 100vw;
+    background-color: blue;
 }
 menu{
     background-image: url(images/header-bg.png);
@@ -62,8 +65,19 @@ article{
     font-size: 1.2em;
     margin: 10px;
     padding: 5px;
-}
 
+}
+#abas a:hover{
+    text-decoration: underline;
+}
+#space{
+    display: inline-block;
+    margin-right: 200px;
+}
+#lupa1{
+    pointer-events: none;
+
+}
 #unit p{
     color: white;
 }
@@ -147,11 +161,9 @@ article span span{
         padding: 20px;
         margin-top: -20px;
         background-color: #001C2A;
-        width: 100vw;
         text-align: center;
     }
     article{
-        width: 100vw;
         background-color: #00293D;
         height: 20px;
     }
