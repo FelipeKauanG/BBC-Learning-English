@@ -202,5 +202,6 @@ article span{
         position: relative;
         display: block;
         font-size: 2em;
+        width: fit-content;
     }
 }
