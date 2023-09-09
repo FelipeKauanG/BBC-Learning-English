@@ -38,10 +38,12 @@ menu{
 }
 
 article{
+    position: relative;
     background-color: #00293D;
     height: 200px;
 }
 #unit{
+    position: relative;
     padding: 20px;
     margin-top: -20px;
     background-color: #001C2A;
@@ -77,12 +79,7 @@ article{
 
 }
 
-article span{
-    position: relative;
-    color: white;
-    font-size: 2em;
-    left: 25%;
-}
+
 #tipocursos{
     position: relative;
     height: 50px;
@@ -121,11 +118,17 @@ article span span{
     color: black;
     text-decoration: none;
     margin-right: 40px;
+    cursor: pointer;
+}
+#abasacima a:hover{
+    border-bottom: 1px solid #0178FF;
 }
 article span{
     position: relative;
     top: 10%;
-    left: 5%;
+    left: 10%;
+    color: white;
+    font-size: 2em;
 }
 #bbc{
     transform: translate(0%, -50%);
