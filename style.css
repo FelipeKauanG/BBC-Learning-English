@@ -2,10 +2,6 @@ body{
     padding: 0px;
     margin: 0px;
 }
-@font-face {
-    font-family: 'bbc';
-    src: url(images/FontsNinja-0.1.35.exe);
-}
 .material-symbols-outlined {
     user-select: none;
   font-variation-settings:
@@ -27,7 +23,7 @@ body{
     width: 100vw;
 }
 header{
-    height: 20px;
+    height: 50px;
     width: 100vw;
     background-color: blue;
 }
@@ -36,7 +32,8 @@ menu{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 25vh;
+    height: 150px;
+    margin: 0px;
 }
 
 article{
@@ -78,34 +75,17 @@ article{
     pointer-events: none;
 
 }
-#unit p{
-    color: white;
-}
-button{
-    width: 30px;
-    height: 10px;
-    background-color: rgb(201, 201, 201);
-    color: white;
-    border: none;
-    margin: -1px;
-    border-radius: 1px;
-}
-
-button:hover{
-    background-color: #FFFFFF;
-}
-button:active{
-    background-color: #62BBB9;
-}
-article{
-    padding: 20px;
-}
 
 article span{
     position: relative;
     color: white;
     font-size: 2em;
     left: 25%;
+}
+#tipocursos{
+    position: relative;
+    height: 50px;
+    background-color: #62BBB9;
 }
 article #mol{
     font-size: 4em;
@@ -116,16 +96,30 @@ article span span{
 #user{
     display: none;
 }
+#sign{
+    transform: translate(0%, -50%);
+    position: relative;
+    top: 50%;
+    color: white;
+    left: 1%;
+}
 #menulegend{
+    position: relative;
     display: block;
     position: relative;
-    top: 40px;
+    top: 30px;
+}
+article span{
+    position: relative;
+    top: 10%;
+    left: 5%;
 }
 #title{
+    position: relative;
     font-family: "bbc";
     font-size: 2em;
+    top: 30px;
     position: relative;
-    top: 40px;
 }
 #title2{
     display: none;
@@ -135,7 +129,7 @@ article span span{
 }
 @media screen and (max-width:1010px){
     menu{
-        height: 30vh;
+        height: 150px;
     }
     article span{
         display: none;
@@ -148,24 +142,9 @@ article span span{
         color: white;
         font-size: 2em;
     }
-    #bbc{
-        transform: translate(-50%, 25%);
-        position: absolute;
-        vertical-align: middle;
-        height: 2em;
-        left: 50%;
-    }
-
-    #unit{
-        height: 50px;
-        padding: 20px;
-        margin-top: -20px;
-        background-color: #001C2A;
-        text-align: center;
-    }
     article{
+        height: 40px;
         background-color: #00293D;
-        height: 20px;
     }
     
     #unit div, span{
@@ -178,10 +157,8 @@ article span span{
         display: none;
     }
     #title2{
-        transform: translate(-0%, -100%);
         position: relative;
         display: block;
         font-size: 2em;
-        top: 50%;
     }
 }
