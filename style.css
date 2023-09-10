@@ -9,6 +9,7 @@ body{
 }
 #rightsign{
     display: none;
+    width: fit-content;
 }
 .material-symbols-outlined {
     user-select: none;
@@ -32,7 +33,7 @@ body{
 }
 header{
     height: 50px;
-    width: 100vw;
+    width: 100%;
     background-color: white;
     border-bottom: 1px solid #E0E1E2;
 }
@@ -205,7 +206,7 @@ article span{
 }
 #abaabaixo{
     height: 50px;
-    width: 100vw;
+    width: 100%;
     background-color: #001C2A;
 }
 #abasacima span{
@@ -213,22 +214,29 @@ article span{
     left: -5px;
 }
 #abaabaixo span{
+    cursor: pointer;
     position: relative;
     color: white;
+    font-size: 1.2em;
     left: 10%;
     margin-right: 100px;
     line-height: 50px;
     padding: 17px;
 }
+#abaabaixo span:hover{
+    text-decoration: underline;
+}
 #lupascr{
     width: fit-content;
 }
-
+#botoes, #botoesabas div{
+    display: none;
+}
 @media screen and (max-width:1010px){
     #rightsign{
         display: block;
         position: relative;
-        left: 90%;
+        left: 80%;
         line-height: 50px;
         top: -50%;
     }
@@ -290,5 +298,49 @@ article span{
         font-size: 2em;
         width: fit-content;
         top: 50%;
+    }
+    #botoes{
+        display: block;
+        position: relative;
+        transform: translate(-50%, -0%);
+        background-color: rgb(233, 233, 233);
+        height: 80%;
+        width: 80%;
+        top: 0%;
+        line-height: 50px;
+        left: 50%;
+        color: #002c42;
+        cursor: pointer;
+        user-select: none;
+        font-size: 1.3em;
+    }
+    .unidade{
+        position: relative;
+        transform: translate(-50%,0%);
+        height: 50px;
+        border-bottom: 1px solid #002c42;
+        line-height: 40px;
+        left: 50%;
+        width: 80%;
+        font-size: 1.3em;
+        color: #34647c;
+        background-color: #E9E9E9;
+    }
+    #botoesabas{
+        display: none;
+        height: fit-content;
+        background-color: #001C2A;
+        padding: 0px 0px 20px 0px;
+    }
+    #botoesabas div{
+        position: relative;
+        display: block;
+    }
+    #botoesabas div:hover{
+        text-decoration: underline;
+    }
+    .unidade strong{
+        color: #001C2A;
+        font-weight: 900px;
     }
 }
