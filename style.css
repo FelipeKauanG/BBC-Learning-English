@@ -65,25 +65,47 @@ article{
     font-size: 1.2em;
     margin: 10px;
     padding: 5px;
+    left: 10%;
 
 }
 #abas a:hover{
     text-decoration: underline;
 }
-#space{
+
+abas h2{
     display: inline-block;
-    margin-right: 200px;
+}
+.space{
+    display: inline-block;
+    margin-right: 100px;
 }
 #lupa1{
     pointer-events: none;
 
 }
-
+header a{
+    line-height: 50px;
+    vertical-align: middle;
+}
 
 #tipocursos{
     position: relative;
-    height: 50px;
+    height: 80px;
     background-color: #62BBB9;
+    margin: 0px;
+}
+#tipocursos input[type='search']{
+    position: relative;
+    transform: translate(-50%, -50%);
+    line-height: 40px;
+    vertical-align: middle;
+    top: 50%;
+    width: 80%;
+    left: 50%;
+}
+#tipocursos input[type='search']:active{
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 article #mol{
     font-size: 4em;
@@ -163,7 +185,33 @@ article span{
 #language2{
     display: none;
 }
+#abaabaixo{
+    height: 50px;
+    width: 100vw;
+    background-color: #001C2A;
+}
+#abasacima span{
+    position: relative;
+    left: -5px;
+}
+#abaabaixo span{
+    position: relative;
+    color: white;
+    left: 10%;
+    background-color: white;
+    margin-right: 100px;
+    line-height: 50px;
+    color: black;
+    padding: 17px;
+}
+
 @media screen and (max-width:1010px){
+    #abas{
+        display: none;
+    }
+    #tipocursos{
+        display: none;
+    }
     menu{
         height: 150px;
     }
@@ -173,6 +221,7 @@ article span{
     #abasacima{
         display: none;
     }
+    
     #sign{
         transform: translate(0%, -50%);
         position: absolute;
@@ -189,7 +238,7 @@ article span{
         left: 50%;
     }
     article{
-        height: 40px;
+        height: 20px;
         background-color: #00293D;
     }
     #unit div, span{
@@ -201,10 +250,19 @@ article span{
     #title{
         display: none;
     }
+    menu{
+        background-image: url(images/header-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100px;
+    }
     #title2{
+        transform: translate(0%, -100%);
         position: relative;
         display: block;
         font-size: 2em;
         width: fit-content;
+        top: 50%;
     }
 }
