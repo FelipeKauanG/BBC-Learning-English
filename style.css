@@ -1,6 +1,14 @@
+@font-face {
+    font-family: "bbc";
+    src: url(fontes/GillSans-Bold.ttf);
+}
 body{
     padding: 0px;
     margin: 0px;
+    font-family: "bbc";
+}
+#rightsign{
+    display: none;
 }
 .material-symbols-outlined {
     user-select: none;
@@ -25,7 +33,7 @@ body{
 header{
     height: 50px;
     width: 100vw;
-    background-color: #F7F8F9;
+    background-color: white;
     border-bottom: 1px solid #E0E1E2;
 }
 menu{
@@ -57,14 +65,15 @@ article{
     width: fit-content;
     background-color: white;
 }
+#abas span a{
+    text-decoration: none;
+}
 #abas a{
     position: relative;
     vertical-align: middle;
-    text-decoration: none;
     color: #00293D;
     font-size: 1.2em;
     margin: 10px;
-    padding: 5px;
     left: 10%;
 
 }
@@ -146,6 +155,9 @@ article span span{
 #abasacima a:hover{
     border-bottom: 1px solid #0178FF;
 }
+#abasacima a .material-symbols-outlined:hover{
+    border: none;
+}
 article span{
     position: relative;
     top: 10%;
@@ -156,19 +168,28 @@ article span{
 #bbc{
     transform: translate(0%, -50%);
     position: relative;
-    height: 30px;
+    height: 35px;
     line-height: 50%;
     top: 50%;
     left: 10%;
     display: inline-block;
 }
+
+
 #title{
+    color: #3A3A3A;
     position: relative;
     font-family: "bbc";
     font-size: 2em;
     top: 30px;
     left: 6.5%;
     position: relative;
+}
+#title2{
+    color: #3A3A3A;
+    position: relative;
+    display: none;
+    left: 5%;
 }
 #menulegend{
     position: relative;
@@ -177,11 +198,7 @@ article span{
     top: 30px;
     width: fit-content;
     left: 6.5%;
-}
-#title2{
-    position: relative;
-    display: none;
-    left: 5%;
+    color: #3A3A3A;
 }
 #language2{
     display: none;
@@ -199,14 +216,22 @@ article span{
     position: relative;
     color: white;
     left: 10%;
-    background-color: white;
     margin-right: 100px;
     line-height: 50px;
-    color: black;
     padding: 17px;
+}
+#lupascr{
+    width: fit-content;
 }
 
 @media screen and (max-width:1010px){
+    #rightsign{
+        display: block;
+        position: relative;
+        left: 90%;
+        line-height: 50px;
+        top: -50%;
+    }
     #abas{
         display: none;
     }
