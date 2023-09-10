@@ -93,6 +93,7 @@ header a{
     height: 80px;
     background-color: #62BBB9;
     margin: 0px;
+    display: none;
 }
 #tipocursos input[type='search']{
     position: relative;

@@ -14,4 +14,5 @@ console.log(innerWidth)
 
 setInterval((att)=>{
     if(innerWidth < 1010){tipocursos.style.display = "none"}
+    
 }, 100)
