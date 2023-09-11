@@ -61,13 +61,16 @@ article{
 #abas{
     text-align: center;
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     height: 20px;
+    line-height: 20px;
     width: fit-content;
     background-color: white;
 }
 #abas span a{
+    position: relative;
     text-decoration: none;
+    left: 10%;
 }
 #abas a{
     position: relative;
@@ -144,9 +147,8 @@ article span span{
 }
 #abasacima a{
     position: relative;
-    vertical-align: middle;
     left: 35%;
-    top: -50px;
+    top: 50%;
     line-height: 50px;
     color: black;
     text-decoration: none;
@@ -158,6 +160,10 @@ article span span{
 }
 #abasacima a .material-symbols-outlined:hover{
     border: none;
+}
+#abasacima span{
+    position: relative;
+    left: -5px;
 }
 article span{
     position: relative;
@@ -209,17 +215,14 @@ article span{
     width: 100%;
     background-color: #001C2A;
 }
-#abasacima span{
-    position: relative;
-    left: -5px;
-}
+
 #abaabaixo span{
     cursor: pointer;
     position: relative;
     color: white;
     font-size: 1.2em;
-    left: 10%;
-    margin-right: 100px;
+    left: 8.5%;
+    margin-right: 50px;
     line-height: 50px;
     padding: 17px;
 }
@@ -231,6 +234,35 @@ article span{
 }
 #botoes, #botoesabas div{
     display: none;
+}
+#conteudo{
+    display: flex;
+    align-items: flex-start;
+}
+#esquerda{
+    position: relative;
+    width: 50%;
+    height: fit-content;
+}
+#direita{
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+.foto img{
+    transform: translate(-50%, -50%);
+    position: relative;
+    display: block;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+}
+.foto{
+    display: block;
+    height: 300px;
+}
+.desc{
+    height: 300px;
 }
 @media screen and (max-width:1010px){
     #rightsign{
@@ -319,7 +351,7 @@ article span{
         transform: translate(-50%,0%);
         height: 50px;
         border-bottom: 1px solid #002c42;
-        line-height: 40px;
+        line-height: 50px;
         left: 50%;
         width: 80%;
         font-size: 1.3em;
@@ -340,7 +372,9 @@ article span{
         text-decoration: underline;
     }
     .unidade strong{
+        line-height: 50px;
         color: #001C2A;
         font-weight: 900px;
     }
+    
 }
