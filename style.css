@@ -1,11 +1,8 @@
-@font-face {
-    font-family: "bbc";
-    src: url(fontes/GillSans-Bold.ttf);
-}
+
 body{
     padding: 0px;
     margin: 0px;
-    font-family: "bbc";
+    font-family: Arial, Helvetica, sans-serif;
 }
 #rightsign{
     display: none;
@@ -145,10 +142,14 @@ article span span{
     line-height: 50px;
     vertical-align: middle;
 }
+#abasacima{
+    position: relative;
+    transform: translate(0%, -150%);
+    top: 50%;
+}
 #abasacima a{
     position: relative;
     left: 35%;
-    top: 50%;
     line-height: 50px;
     color: black;
     text-decoration: none;
@@ -253,16 +254,24 @@ article span{
     transform: translate(-50%, -50%);
     position: relative;
     display: block;
-    height: 200px;
-    top: 50%;
+    height: 250px;
+    top: 30%;
     left: 50%;
 }
 .foto{
     display: block;
-    height: 300px;
+    height: 500px;
 }
 .desc{
-    height: 300px;
+    position: relative;
+    height: 480px;
+}
+.desc h1, h2{
+    color: #002c42;
+}
+.desc p{
+    font-size: 1.2em;
+    width: 75%;
 }
 @media screen and (max-width:1010px){
     #rightsign{
@@ -376,5 +385,10 @@ article span{
         color: #001C2A;
         font-weight: 900px;
     }
-    
+    #direita{
+        display: none;
+    }
+    #esquerda{
+        width: 100%;
+    }
 }
